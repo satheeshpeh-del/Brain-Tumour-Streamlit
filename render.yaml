@@ -8,6 +8,3 @@ services:
     plan: free
     autoDeploy: true
     numInstances: 1
-    envVars:
-      STREAMLIT_SERVER_PORT: $PORT
-      STREAMLIT_SERVER_ADDRESS: 0.0.0.0
