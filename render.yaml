@@ -1,10 +1,7 @@
 services:
   - type: web
     name: brain-tumor-streamlit
-    env: python
-    region: oregon
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "streamlit run streamlit_brain_tumor_app.py --server.port $PORT --server.address 0.0.0.0"
+    runtime: docker
     plan: free
-    autoDeploy: true
-    numInstances: 1
+    env: docker
+    region: oregon
